@@ -42,7 +42,6 @@ resource "aws_instance" "blog" {
   }
 }
 
-/*
 module "blog_alb" {
   source  = "terraform-aws-modules/alb/aws"
   version = "~> 6.0"
@@ -82,7 +81,6 @@ module "blog_alb" {
     Environment = "dev"
   }
 }
-*/
 
 module "blog_sg" {
   source  = "terraform-aws-modules/security-group/aws"
